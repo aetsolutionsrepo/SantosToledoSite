@@ -18,38 +18,84 @@
             background-position: center;
             background-size: cover;
         }
+        .menuFixo {
+            position: fixed;
+            top: 0;
+            z-index: 99;
+            opacity: 0.8;
+        }
+        .divLogo{
+            padding: 10px;
+        }
+        #menuHeader{
+            background-image: url("content/fundo_menu.jpg");
+            background-repeat: repeat-x;
+            width: 100%;
+        }
+
+        #menu ul {
+            margin-left: -15px;
+            list-style:none;
+            margin-top: 10px;
+        }
+        #menu ul li {
+            display: inline-block;
+            width: 150px;
+        }
+        #menu ul li a {
+            color: #6D6D6D;
+            font-family: Verdana;
+            font-size: large;
+        }
+        #menu ul li :hover {
+            display: inline-block;
+            color: #000000;
+            border-bottom:1px solid #999999;
+            text-decoration: none;
+            width: 150px;
+            height: 100%;
+            position: relative;
+        }
+
     </style>
+    <script type="text/javascript">
+        $(function(){
+            var nav = $('#menuHeader');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    nav.addClass("menuFixo");
+                } else {
+                    nav.removeClass("menuFixo");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <!-- Seção do Cabeçalho Início -->
-<header>
-    <nav class="navbar navbar-default navbar-fixed-top" style="height: 90px;">
-        <div class="container">
-            <div class="navbar-header" style="height:80px;">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" style="height:80px;"  href="#"><img src="content/logo.png" alt="Santos Toledo Advogados associados" style="width: 300px;"/></a>
+<header id="Inicio">
+    <div class="container divLogo">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="content/logo.png" alt="Santos Toledo Advogados associados" style="width: 350px;"/>
             </div>
-            <div id="navbar" class="navbar-collapse collapse" style="height:80px;">
-                <ul class="nav navbar-nav" style="margin-top:30px; margin-left:100px;">
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Servicos">Serviços</a></li>
-                    <li><a href="#">Associados</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right ">
-                    <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Login Admin</a></li>-->
-                </ul>
-            </div><!--/.nav-collapse -->
         </div>
+    </div>
+    <nav id="menuHeader">
+            <div class="row">
+                <div id="menu" class="col-sm-12 text-center">
+                    <ul>
+                        <li><a href="#Inicio">Inicio</a></li>
+                        <li><a href="#Sobre">Sobre</a></li>
+                        <li><a href="#Servicos">Serviços</a></li>
+                        <li><a href="#">Associados</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
     </nav>
 </header>
-<section id="Inicio">
+<section>
 <div class="row">
     <div>
         <img class="img-responsive" style="width: 100%;" src="content/banner.jpg" alt="Santos Toledo Advogados Associados" />
