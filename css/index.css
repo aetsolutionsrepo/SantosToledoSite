@@ -1,0 +1,89 @@
+.sectionServicos {
+    background-image: url("../content/bannerlaw.jpg");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bannercarousel1 {
+    background-image: url("../content/background.jpg");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bannercarousel2 {
+    background-image: url("../content/banner.jpg");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bannercarousel3 {
+    background-image: url("../content/bannerlaw.jpg");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    position: relative;
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix + .container {
+    position: relative;
+    top: 50px;
+}
+.divLogo{
+    padding: 35px;
+}
+.nav > li {
+    width:140px;
+    font-size: 13pt;
+}
+.divTopHeader{
+    background-color: #3c3c3c;
+    width: 100%;
+    top:0px;
+    height:40px;
+}
+.spanTopLeft{
+    color:#f7f7f7;
+    font-size: 14pt;
+    float:left;
+    margin-top: 6px;
+    margin-left: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.spanTopRightGlyph{
+    color:#f7f7f7;
+    font-size: 14pt;
+    float:right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 30%; // This is the aspect ratio
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

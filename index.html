@@ -6,60 +6,38 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-    <script type="text/javascript" src="js/jquery-3.1.1.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.js" ></script>
     <title>Santos Toledo Advogados Associados</title>
-    <style type="text/css">
-        .sectionServicos {
-            background-image: url("content/bannerlaw.jpg");
-            min-height: 350px;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
-		  body {
-			position: relative; 
-		  }
-		  .affix {
-			  top:0;
-			  width: 100%;
-			  z-index: 9999 !important;
-		  }
-		  .navbar {
-			  margin-bottom: 0px;
-		  }
-
-		  .affix ~ .container-fluid {
-			 position: relative;
-			 top: 50px;
-		  }
-        .divLogo{
-            padding: 10px;
-        }
-		.nav > li {
-			width:130px;
-		}
-
-    </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="178">
 <!-- Seção do Cabeçalho Início -->
 <header id="Inicio">
+    <div class="divTopHeader">
+        <div cla="container-fluid">
+            <span class="spanTopLeft">
+             <span class="glyphicon glyphicon-phone-alt"></span>
+                (31) 3332-5000
+            </span>
+            <span class="glyphicon glyphicon-envelope spanTopRightGlyph" style="margin-right: 70px;"></span>
+            <span class="glyphicon glyphicon-thumbs-up spanTopRightGlyph"></span>
+        </div>
+    </div>
     <div class="container divLogo">
         <div class="row">
 		  <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <img src="content/logo.png" class="img-responsive" alt="Santos Toledo Advogados associados" style="width: 350px;"/>
+                <img src="content/logo.png" class="img-responsive" alt="Santos Toledo Advogados associados" style="width: 450px;"/>
             </div>
 		   <div class="col-sm-4"></div>
         </div>
     </div>
-	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="178">
   <div class="container">
 	  <div class="row">
-	   <div class="col-sm-2"></div>
-		<div class="col-sm-8 text-center">
+	   <div class="col-sm-1"></div>
+		<div class="col-sm-10 text-center">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 				  <span class="icon-bar"></span>
@@ -74,20 +52,51 @@
                         <li><a href="#Sobre">Sobre</a></li>
                         <li><a href="#Servicos">Serviços</a></li>
                         <li><a href="#">Associados</a></li>
+                       <li><a href="#Localizacao">Localização</a></li>
                         <li><a href="#">Contato</a></li>
 				  </ul>
 			  </div>
 			</div>
 		  </div>
-		 <div class="col-sm-2"></div>
+		 <div class="col-sm-1"></div>
 	  </div>
   </div>
 </nav>    
 </header>
 <section>
 <div class="row">
-    <div>
-        <img class="img-responsive" style="width: 100%;" src="content/banner.jpg" alt="Santos Toledo Advogados Associados" />
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active bannercarousel1">
+
+            </div>
+
+            <div class="item bannercarousel2">
+
+            </div>
+
+            <div class="item bannercarousel3">
+
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </div>
 </section >
@@ -199,6 +208,11 @@
             </div>
         </div>
     </div>
+</section>
+<section id="Localizacao">
+    <div class="row google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.1075648978144!2d-43.94362808557074!3d-19.919871543137486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e2d9167ce5%3A0x10c0768474fe8b6c!2sR.+Curitiba%2C+815+-+Centro%2C+Belo+Horizonte+-+MG%2C+30170-120!5e0!3m2!1spt-BR!2sbr!4v1488499574246" width="1024" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 </section>
 </body>
 </html>
