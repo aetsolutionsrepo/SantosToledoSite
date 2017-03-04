@@ -87,3 +87,17 @@ body {
     width: 100% !important;
     height: 100% !important;
 }
+.sectionForm{
+    background-color: #cccccc;
+    padding: 20px;
+}
+.sectionFormTitulo{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #666666;
+    padding: 20px;
+}
+.labelForm{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #999999;
+}
