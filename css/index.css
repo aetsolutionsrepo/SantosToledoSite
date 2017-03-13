@@ -101,3 +101,16 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #999999;
 }
+
+.associado1 {
+    background-image: url("../content/equipesantostoledo.png");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.associado2 {
+    background-image: url("../content/associado1.png");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
