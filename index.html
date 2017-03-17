@@ -13,19 +13,20 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="178">
 <!-- Seção do Cabeçalho Início -->
-<header id="Inicio">
-    <div class="divTopHeader">
-        <div class="container-fluid">
-            <span class="spanTopLeft">
-             <span class="glyphicon glyphicon-phone-alt"></span>
-                (31) 3332-5000
-            </span>
-            <span class="glyphicon glyphicon-envelope spanTopRightGlyph" style="margin-right: 70px;"></span>
-            <span class="glyphicon glyphicon-thumbs-up spanTopRightGlyph"></span>
+
+<section id="Inicio" class="row">
+        <div class="divTopHeader">
+            <div class="container">
+                <span class="spanTopLeft">
+                 <span class="glyphicon glyphicon-phone-alt"></span>
+                    (31) 3332-5000
+                </span>
+                <span class="glyphicon glyphicon-envelope spanTopRightGlyph" style="margin-right: 70px;"></span>
+                <span class="glyphicon glyphicon-thumbs-up spanTopRightGlyph"></span>
+            </div>
         </div>
-    </div>
-    <div class="container divLogo">
-        <div class="row">
+    <div class="fundobranco divLogo ">
+        <div class="container ">
 		  <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <img src="content/logo.png" class="img-responsive" alt="Santos Toledo Advogados associados" style="width: 450px;"/>
@@ -34,8 +35,8 @@
         </div>
     </div>
 	<nav class="navbar navbar-default" data-spy="affix" data-offset-top="178">
-  <div class="container">
-	  <div class="row">
+  <div class="row">
+	  <div class="container">
 	   <div class="col-sm-1"></div>
 		<div class="col-sm-10 text-center">
 			<div class="navbar-header">
@@ -50,7 +51,7 @@
 				<ul class="nav navbar-nav">
 				  <li><a href="#Inicio">Inicio</a></li>
                         <li><a href="#Sobre">Sobre</a></li>
-                        <li><a href="#Servicos">Áreas atuação</a></li>
+                        <li><a href="#Servicos">Atuação</a></li>
                         <li><a href="#Associados">Associados</a></li>
                        <li><a href="#Localizacao">Localização</a></li>
                         <li><a href="#Contato">Contato</a></li>
@@ -62,7 +63,7 @@
 	  </div>
   </div>
 </nav>    
-</header>
+</section>
 <section>
 <div class="row shadow">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -101,7 +102,19 @@
 </div>
 </section >
 <section id="Sobre">
-    <div class="row" >
+    <div class="row fundobranco" >
+        <div class="container marginTopBottom">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 text-center">
+                <p class="labelSobreTitulo">Santos Toledo Advogados Associados</p>
+                <p class="textoSobre">
+                    Realizando uma prestação de serviços jurídicos de maneira ética e responsável primando pela confiança, responsabilidade e dedicação.<br/><br/>
+                    Agende uma consultoria...
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    <div class="row fundobranco" >
         <div class="container">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
@@ -110,7 +123,7 @@
             <div class="col-sm-1"></div>
         </div>
        <!-- <div class="container">
-            <div class="col-sm-4">
+            <div class="col-sm-4">e
                 <div>
                     <div class="text-center">
                         <img class="img-circle" style="width:140px;" src="content/judge.png" alt="Lorem ipsum" />
@@ -403,13 +416,16 @@
         </div>
 </section>
 <section id="Contato" class="sectionForm">
-    <div class="container">
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="sectionFormTitulo">..:: Entre em contato conosco ::..</h2>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8 text-center">
+                <p class="sectionFormTitulo">..:: Entre em contato conosco ::..</p>
             </div>
+            <div class="col-sm-3"></div>
         </div>
         <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8">
             <form class="form-horizontal">
                 <div class="form-group">
                     <label class="control-label col-sm-2 labelForm" for="assunto">Assunto:</label>
@@ -442,8 +458,9 @@
                     </div>
                 </div>
             </form>
+            </div>
+            <div class="col-sm-3"></div>
         </div>
-    </div>
 </section>
 
 </body>

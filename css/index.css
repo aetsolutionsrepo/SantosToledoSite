@@ -1,10 +1,14 @@
+@font-face {
+    font-family: helvetica;
+    src: url("../fonts/helvetica.ttf");
+}
+@font-face {
+    font-family: vijaya;
+    src: url("../fonts/vijaya.ttf");
+}
+
 .sectionServicos {
-    background-image: url("../content/bannerlaw.jpg");
     min-height: 450px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     padding-bottom: 40px;
 }
 .bannercarousel1 {
@@ -32,12 +36,20 @@
     background-size: cover;
 }
 body {
+    background-image: url("../content/bannerlaw.jpg");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     position: relative;
+    max-width: 100%;
 }
 .affix {
     top:0;
     width: 100%;
     z-index: 9999 !important;
+    margin-left:15px;
 }
 .navbar {
     margin-bottom: 0px;
@@ -50,9 +62,15 @@ body {
 .divLogo{
     padding: 35px;
 }
+
+.active>a {
+    border-bottom: 2px solid #666666;
+}
+
 .nav > li {
     width:140px;
-    font-size: 13pt;
+    font-size: 18pt;
+    font-family: vijaya, helvetica, Arial, sans-serif;
 }
 .divTopHeader{
     background-color: #3c3c3c;
@@ -66,7 +84,7 @@ body {
     float:left;
     margin-top: 6px;
     margin-left: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: helvetica, Arial, sans-serif;
     font-weight: bold;
 }
 .spanTopRightGlyph{
@@ -89,18 +107,24 @@ body {
     height: 100% !important;
 }
 .sectionForm{
-    background-color: #cccccc;
+    background-image: url("../content/fundoformulario.jpg");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
     padding: 20px;
 }
 .sectionFormTitulo{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: vijaya, helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #666666;
+    color: #ffffff;
     padding: 20px;
+    font-size: 30pt;
 }
 .labelForm{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #999999;
+    font-family:  helvetica, Arial, sans-serif;
+    color: #ffffff;
 }
 
 .associado1 {
@@ -126,23 +150,47 @@ body {
     margin-top: 4px;
 }
 .tituloservicos{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: vijaya, helvetica, Arial, sans-serif;
     font-weight: bold;
     color: #f9f9f9;
     padding: 20px;
     border: 5px;
+    font-size: 28pt;
 }
 .labelservicos{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:  vijaya,helvetica, Arial, sans-serif;
     font-weight: bold;
     color: #666666;
     margin-left: 50px;
     margin-top: 14px;
+    font-size: 18pt;
 
 }
-.shadow{
+.shadow {
     box-shadow: 0px 10px 15px #888888;
+}
+.row{
+margin-right: 0px;
 }
 .panelservicos{
     min-height: 250px;
+}
+.fundobranco{
+    background-color: #ffffff;
+}
+.labelSobreTitulo{
+    font-family:  vijaya,helvetica, Arial, sans-serif;
+    color: #666666;
+    margin-n-top: 14px;
+    font-size: 48pt;
+}
+.textoSobre{
+    font-family:  helvetica, Arial, sans-serif;
+    color: #999999;
+    font-style: italic;
+    font-size: 15pt;
+}
+.marginTopBottom{
+    margin-top:40px;
+    margin-bottom: 20px;
 }
