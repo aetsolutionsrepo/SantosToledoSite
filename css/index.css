@@ -194,3 +194,47 @@ margin-right: 0px;
     margin-top:40px;
     margin-bottom: 20px;
 }
+.paddings{
+    padding-top:40px;
+    padding-bottom:60px;
+    min-height: 450px;
+}
+
+.labelAssociadoTitulo{
+    font-family:  vijaya,helvetica, Arial, sans-serif;
+    color: #666666;
+    margin-top: 14px;
+    font-size: 25pt;
+}
+.textoAssociado{
+    font-family:  helvetica, Arial, sans-serif;
+    color: #999999;
+    font-style: italic;
+    font-size: 15pt;
+}
+
+.carousel-indicators li
+{
+    border: 1px solid #666666;
+}
+.carousel-indicators .active
+{
+   background-color:  #666666;
+}
+
+.divFooter{
+    background-color: #3c3c3c;
+    width: 100%;
+    bottom:0px;
+    min-height:60px;
+    padding:30px;
+    color: #999999;
+    font-family: helvetica, Arial, sans-serif;
+}
+.menuFooter li{
+    display:inline-block;
+    margin-left:15px;
+}
+.menuFooter li a{
+    color: #999999;
+}
