@@ -36,7 +36,7 @@
     background-size: cover;
 }
 body {
-    background-image: url("../content/bannerlaw.jpg");
+    background-image: url("../content/bannerlaw2.png");
     min-height: 450px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -202,13 +202,13 @@ margin-right: 0px;
 
 .labelAssociadoTitulo{
     font-family:  vijaya,helvetica, Arial, sans-serif;
-    color: #666666;
+    color: #333333;
     margin-top: 14px;
     font-size: 25pt;
 }
 .textoAssociado{
     font-family:  helvetica, Arial, sans-serif;
-    color: #999999;
+    color: #666666;
     font-style: italic;
     font-size: 15pt;
 }
@@ -237,4 +237,7 @@ margin-right: 0px;
 }
 .menuFooter li a{
     color: #999999;
+}
+.fundocinza{
+    background-color: #e6e6e6;
 }
