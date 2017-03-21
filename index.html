@@ -7,8 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/bootstrap.js" ></script>
+    <script type="text/javascript" src="js/jquery.mask.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
     <title>Santos Toledo Advogados Associados</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="178">
@@ -363,39 +365,44 @@
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-8">
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label class="control-label col-sm-2 labelForm" for="assunto">Assunto:</label>
+            <form id='formContato' class="form-horizontal">
+                <div id="cpNome" class="form-group">
+                    <label class="control-label col-sm-2 labelForm" for="txtNome">Nome: *</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="assunto" placeholder="Assunto">
+                        <input id="txtNome" type="text" class="form-control" placeholder="Informe seu nome">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2 labelForm" for="email">Email:</label>
+                <div id="cpEmail" class="form-group">
+                    <label class="control-label col-sm-2 labelForm" for="txtEmail">Email: *</label>
                     <div class="col-sm-8">
-                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        <input id="txtEmail" type="email" class="form-control" placeholder="Informe seu email">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-2 labelForm" for="tel">Telefone:</label>
-                    <div class="col-sm-2">
-                        <input type="tel" class="form-control" id="tel" placeholder="Telefone">
+                <div id="cpTelefone" class="form-group">
+                    <label class="control-label col-sm-2 labelForm" for="txtTelefone">Telefone: *</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="txtTelefone" placeholder="Telefone">
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label class="control-label col-sm-2 labelForm" for="comment">Descrição:</label>
+                <div id="cpAssunto" class="form-group">
+                    <label class="control-label col-sm-2 labelForm" for="txtAssunto">Assunto: *</label>
                     <div class="col-sm-8">
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Descreva o assunto"></textarea>
+                        <input id="txtAssunto" type="text" class="form-control" placeholder="Informe o assunto">
+                    </div>
+                </div>
+                <div id="cpComment" class="form-group">
+                    <label class="control-label col-sm-2 labelForm" for="txtComment">Descrição: *</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" rows="5" id="txtComment" placeholder="Descreva o assunto"></textarea>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-8">
-                        <button type="submit" class="btn btn-default">Enviar</button>
+                        <button id="btnEnviar" type="button" class="btn btn-default">Enviar</button>
                     </div>
                 </div>
                 <div id="alertasucesso" style="display:none;" class="alert alert-success">
-                    <strong>Sucesso!</strong> O seu contato foi enviado com sucesso.
+                    <strong>Enviado com sucesso!</strong> Entraremos em contato o mais rápido possível.
                 </div>
                 <div id="alertawarning" style="display:none;"  class="alert alert-warning">
                     <strong>Alerta!</strong> Ocorre um erro ao enviar seu contato. Tente novamente mais tarde.

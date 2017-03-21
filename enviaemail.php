@@ -1,5 +1,20 @@
 <?php
 
+$nome = $_POST['nome'];
+$email_reposta =  $_POST['email'];
+$telefone =  $_POST['telefone'];
+$assunto =  $_POST['assunto'];
+$comentario =  $_POST['comentario'];
+
+if (!empty($nome) && !empty($email_reposta) && !empty($telefone) && !empty($assunto) && !empty($comentario) )
+{
+	echo "Sucesso";
+}
+else{
+	echo "Erro";
+}
+
+/*
 ////error_reporting(E_ALL);
 error_reporting(E_STRICT);
 
@@ -58,5 +73,5 @@ else
 {
 	echo 'Erro do PHPMailer: ' . $Mailer->ErrorInfo;
 }
-
+*/
 ?>
