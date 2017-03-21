@@ -13,8 +13,8 @@ if (!empty($nome) && !empty($email_reposta) && !empty($telefone) && !empty($assu
 else{
 	echo "Erro";
 }
-
 /*
+
 ////error_reporting(E_ALL);
 error_reporting(E_STRICT);
 
@@ -37,7 +37,7 @@ $Mailer->Charset = 'UTF-8';
 // Configurações do SMTP
 $Mailer->SMTPAuth = true;
 $Mailer->SMTPSecure = 'ssl';
-$Mailer->Host = 'smtpout.secureserver.net';
+$Mailer->Host = 'ssl://smtpout.secureserver.net';
 $Mailer->Port = 465;
 $Mailer->Username = 'contato@santostoledo.com.br';
 $Mailer->Password = 'Advocacia2015';
@@ -67,11 +67,11 @@ $Mailer->AddAddress('a-a-martins@bol.com.br');
 // verifica se enviou corretamente
 if ($Mailer->Send())
 {
-	echo "Enviado com sucesso";
+	echo "Sucesso";
 }
 else
 {
-	echo 'Erro do PHPMailer: ' . $Mailer->ErrorInfo;
+	echo 'Erro';
 }
 */
 ?>

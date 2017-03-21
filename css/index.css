@@ -241,3 +241,16 @@ margin-right: 0px;
 .fundocinza{
     background-color: #e6e6e6;
 }
+
+.AlertLoadingTotal {
+    -moz-opacity: .5;
+    opacity: .60;
+    filter: Alpha(Opacity=50);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 20000000;
+    background: #FFF url("../content/loader.gif") no-repeat center center;
+}

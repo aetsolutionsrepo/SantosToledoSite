@@ -1,3 +1,12 @@
+
+$(document).ajaxStart(function(e, xhr, opt){
+    $('#dvBloquearTelaTotal').fadeIn('slow');
+});
+
+$(document).ajaxStop(function(){
+    $('#dvBloquearTelaTotal').fadeOut('slow');
+});
+
 $('document').ready(function(){
 
 	$("#txtNome").blur(function() {
@@ -127,13 +136,12 @@ $('document').ready(function(){
 				        	$('#formContato').each (function(){
 								  this.reset();
 								});
-				        	
 				        	$('#alertasucesso').fadeIn('slow');
 				        	setTimeout(function(){$('#alertasucesso').fadeOut('slow');},3000);
 				        }
 				        else{
 							$('#alertawarning').fadeIn('slow');
-							setTimeout(function(){$('#alertawarning').fadeOut('slow');},3000);
+							setTimeout(function(){$('#alertawarning').fadeOut('slow'); },3000);
 				        }
 				   },
 				   beforeSend: function() {
