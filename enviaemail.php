@@ -1,10 +1,10 @@
 <?php
 
-$nome = $_POST['nome'];
-$email_reposta =  $_POST['email'];
-$telefone =  $_POST['telefone'];
-$assunto =  $_POST['assunto'];
-$comentario =  $_POST['comentario'];
+$nome = utf8_decode($_POST['nome']);
+$email_reposta =  utf8_decode($_POST['email']);
+$telefone =  utf8_decode($_POST['telefone']);
+$assunto =  utf8_decode($_POST['assunto']);
+$comentario =  utf8_decode($_POST['comentario']);
 
 /*
 if (!empty($nome) && !empty($email_reposta) && !empty($telefone) && !empty($assunto) && !empty($comentario) )
@@ -17,14 +17,17 @@ else{
 */
 
 $corpoEmail = '<html>';
+$corpoEmail.='<head><meta charset="utf-8" /></head>';
 $corpoEmail .= '<body>';
-$corpoEmail .= '<p> Este e-mail foi enviado pelo site. </p>';
+$corpoEmail .= '<p> Seu contato foi enviado pelo nosso site.</p>';
 $corpoEmail .= '<br/><br/><br/>';
 $corpoEmail .= '<b>Nome: </b>'.$nome.' <br/>';
 $corpoEmail .= '<b>Email: </b>'.$email_reposta.' <br/>';
 $corpoEmail .= '<b>Telefone: </b>'.$telefone.' <br/>';
 $corpoEmail .= '<b>Assunto: </b>'.$assunto.' <br/>';
 $corpoEmail .= '<b>Descrição: </b>'.$comentario.' <br/>';
+$corpoEmail .= '<br/><br/><br/>';
+$corpoEmail .= '<p> Entraremos em contato o mais breve possível. </p>';
 $corpoEmail .= '</body>';
 $corpoEmail .= '</html>';
 
@@ -67,14 +70,15 @@ $Mailer->FromName = 'Santos Toledo Advogados Associados';
 $Mailer->Subject = 'Enviado pelo Site:'.$assunto;
  
 // corpo da mensagem
-$Mailer->Body = $corpoEmail;
+$Mailer->Body = utf8_decode($corpoEmail);
  
 // corpo da mensagem em modo texto
 //$Mailer->AltBody = 'Mensagem em texto';
  
 // adiciona destinatário (pode ser chamado inúmeras vezes)
 $Mailer->AddAddress('contato@santostoledo.com.br');
- 
+$Mailer->AddCC($email_reposta);
+
 // adiciona um anexo
 //$Mailer->AddAttachment('arquivo.pdf');
  
