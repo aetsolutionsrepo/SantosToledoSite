@@ -128,20 +128,19 @@ $('document').ready(function(){
         			comentario: txtComment.val()
 				   },
 				   error: function() {
-				         $('#alertawarning').fadeIn('slow');
-				         setTimeout(function(){$('#alertawarning').fadeOut('slow');},3000);
+
+                       $('#alertawarning').dialog();
 				   },
 				   success: function( texto ) { 
 				        if (texto=='Sucesso'){
 				        	$('#formContato').each (function(){
 								  this.reset();
 								});
-				        	$('#alertasucesso').fadeIn('slow');
-				        	setTimeout(function(){$('#alertasucesso').fadeOut('slow');},3000);
+							$('#alertasucesso').dialog();
 				        }
 				        else{
-							$('#alertawarning').fadeIn('slow');
-							setTimeout(function(){$('#alertawarning').fadeOut('slow'); },3000);
+
+                            $('#alertawarning').dialog();
 				        }
 				   },
 				   beforeSend: function() {

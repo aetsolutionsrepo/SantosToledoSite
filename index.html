@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/bootstrap.js" ></script>
     <script type="text/javascript" src="js/jquery.mask.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
     <script type="text/javascript" src="js/index.js" ></script>
     <title>Santos Toledo Advogados Associados</title>
 </head>
@@ -399,14 +403,8 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-8">
-                        <button id="btnEnviar" type="button" class="btn btn-default">Enviar</button>
+                        <button id="btnEnviar" type="button" class="btn btn-default btn-group-sm" style="width: 180px;">Enviar</button>
                     </div>
-                </div>
-                <div id="alertasucesso" style="display:none;" class="alert alert-success">
-                    <strong>Enviado com sucesso!</strong> Entraremos em contato o mais rápido possível.
-                </div>
-                <div id="alertawarning" style="display:none;"  class="alert alert-warning">
-                    <strong>Alerta!</strong> Ocorre um erro ao enviar seu contato. Tente novamente mais tarde.
                 </div>
             </form>
             </div>
@@ -414,6 +412,12 @@
         </div>
 </section>
 <footer>
+    <div id="alertasucesso" style="display:none;" >
+       <span class="text-success"><strong>Enviado com sucesso!</strong> Entraremos em contato o mais rápido possível.</span>
+    </div>
+    <div id="alertawarning" style="display:none;" >
+        <span class="text-warning"><strong>Alerta!</strong> Ocorre um erro ao enviar seu contato. Tente novamente mais tarde.</span>
+    </div>
     <div class="divFooter">
         <div class="row">
             <div class="col-sm-1"></div>

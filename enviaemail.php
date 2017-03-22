@@ -6,6 +6,7 @@ $telefone =  $_POST['telefone'];
 $assunto =  $_POST['assunto'];
 $comentario =  $_POST['comentario'];
 
+/*
 if (!empty($nome) && !empty($email_reposta) && !empty($telefone) && !empty($assunto) && !empty($comentario) )
 {
 	echo "Sucesso";
@@ -13,7 +14,20 @@ if (!empty($nome) && !empty($email_reposta) && !empty($telefone) && !empty($assu
 else{
 	echo "Erro";
 }
-/*
+*/
+
+$corpoEmail = '<html>';
+$corpoEmail .= '<body>';
+$corpoEmail .= '<p> Este e-mail foi enviado pelo site. </p>';
+$corpoEmail .= '<br/><br/><br/>';
+$corpoEmail .= '<b>Nome: </b>'.$nome.' <br/>';
+$corpoEmail .= '<b>Email: </b>'.$email_reposta.' <br/>';
+$corpoEmail .= '<b>Telefone: </b>'.$telefone.' <br/>';
+$corpoEmail .= '<b>Assunto: </b>'.$assunto.' <br/>';
+$corpoEmail .= '<b>Descrição: </b>'.$comentario.' <br/>';
+$corpoEmail .= '</body>';
+$corpoEmail .= '</html>';
+
 
 ////error_reporting(E_ALL);
 error_reporting(E_STRICT);
@@ -37,29 +51,29 @@ $Mailer->Charset = 'UTF-8';
 // Configurações do SMTP
 $Mailer->SMTPAuth = true;
 $Mailer->SMTPSecure = 'ssl';
-$Mailer->Host = 'ssl://smtpout.secureserver.net';
+$Mailer->Host = 'smtpout.secureserver.net';
 $Mailer->Port = 465;
-$Mailer->Username = 'contato@santostoledo.com.br';
+$Mailer->Username = 'site@santostoledo.com.br';
 $Mailer->Password = 'Advocacia2015';
  
 // E-Mail do remetente (deve ser o mesmo de quem fez a autenticação
 // nesse caso seu_login@gmail.com)
-$Mailer->From = 'contato@santostoledo.com.br';
+$Mailer->From = 'site@santostoledo.com.br';
  
 // Nome do remetente
 $Mailer->FromName = 'Santos Toledo Advogados Associados';
  
 // assunto da mensagem
-$Mailer->Subject = 'Teste';
+$Mailer->Subject = 'Enviado pelo Site:'.$assunto;
  
 // corpo da mensagem
-$Mailer->Body = 'Mensagem em HTML';
+$Mailer->Body = $corpoEmail;
  
 // corpo da mensagem em modo texto
-$Mailer->AltBody = 'Mensagem em texto';
+//$Mailer->AltBody = 'Mensagem em texto';
  
 // adiciona destinatário (pode ser chamado inúmeras vezes)
-$Mailer->AddAddress('a-a-martins@bol.com.br');
+$Mailer->AddAddress('contato@santostoledo.com.br');
  
 // adiciona um anexo
 //$Mailer->AddAttachment('arquivo.pdf');
@@ -73,5 +87,4 @@ else
 {
 	echo 'Erro';
 }
-*/
-?>
+
