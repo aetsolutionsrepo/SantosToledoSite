@@ -36,7 +36,7 @@
     background-size: cover;
 }
 body {
-    background-image: url("../content/bannerlaw2.png");
+    background-image: url("../content/camera.jpg");
     min-height: 450px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -293,4 +293,81 @@ margin-right: 0px;
     border-bottom-color: #00cc00;
 }
 
+.panel-3 {
+    border-color: #094684;
+}
+.panel-3 > .panel-heading {
+    color: #fff;
+    background-color: #033568;
+    border-color: #094684;
+}
+.panel-3 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #094684;
+}
+.panel-3 > .panel-heading .badge {
+    color: #094684;
+    background-color: #fff;
+}
+.panel-3 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #094684;
+}
+
+
+.panel-4 {
+    border-color: #c91456;
+}
+.panel-4 > .panel-heading {
+    color: #fff;
+    background-color: #ad0c47;
+    border-color: #c91456;
+}
+.panel-4 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #c91456;
+}
+.panel-4 > .panel-heading .badge {
+    color: #c91456;
+    background-color: #fff;
+}
+.panel-4 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #c91456;
+}
+
+.panel-5 {
+    border-color: #09a8c4;
+}
+.panel-5 > .panel-heading {
+    color: #fff;
+    background-color: #0193ad;
+    border-color: #09a8c4;
+}
+.panel-5 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #09a8c4;
+}
+.panel-5 > .panel-heading .badge {
+    color: #09a8c4;
+    background-color: #fff;
+}
+.panel-5 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #09a8c4;
+}
+
+
+.panel-6 {
+    border-color: #b5af05;
+}
+.panel-6 > .panel-heading {
+    color: #fff;
+    background-color: #9b9603;
+    border-color: #b5af05;
+}
+.panel-6 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #b5af05;
+}
+.panel-6 > .panel-heading .badge {
+    color: #b5af05;
+    background-color: #fff;
+}
+.panel-6 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #b5af05;
+}
 /***************************/
