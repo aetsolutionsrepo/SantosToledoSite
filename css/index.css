@@ -73,7 +73,7 @@ body {
     font-family: vijaya, helvetica, Arial, sans-serif;
 }
 .divTopHeader{
-    background-color: #3c3c3c;
+    background-color: #003366;
     width: 100%;
     top:0px;
     height:40px;
@@ -160,7 +160,7 @@ body {
 .labelservicos{
     font-family:  vijaya,helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #666666;
+    color: #ffffff;
     margin-left: 50px;
     margin-top: 14px;
     font-size: 18pt;
@@ -254,3 +254,43 @@ margin-right: 0px;
     z-index: 20000000;
     background: #FFF url("../content/loader.gif") no-repeat center center;
 }
+
+/* Panels customizados */
+.panel-1 {
+    border-color: #ff8566;
+}
+.panel-1 > .panel-heading {
+    color: #fff;
+    background-color: #ff5c33;
+    border-color: #ff8566;
+}
+.panel-1 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #ff5c33;
+}
+.panel-1 > .panel-heading .badge {
+    color: #ff8566;
+    background-color: #fff;
+}
+.panel-1 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #ff5c33;
+}
+.panel-2 {
+    border-color: #00cc00;
+}
+.panel-2 > .panel-heading {
+    color: #fff;
+    background-color: #009900;
+    border-color: #00cc00;
+}
+.panel-2 > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #00cc00;
+}
+.panel-2 > .panel-heading .badge {
+    color: #ff8566;
+    background-color: #fff;
+}
+.panel-2 > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #00cc00;
+}
+
+/***************************/
