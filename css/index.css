@@ -11,32 +11,8 @@
     min-height: 450px;
     padding-bottom: 40px;
 }
-.bannercarousel1 {
-    background-image: url("../content/background.jpg");
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-.bannercarousel2 {
-    background-image: url("../content/banner.jpg");
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-.bannercarousel3 {
-    background-image: url("../content/bannerlaw.jpg");
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
 body {
-    background-image: url("../content/camera.jpg");
+    background-image: url("../content/banner.jpg");
     min-height: 450px;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -64,19 +40,26 @@ body {
 }
 
 .active>a {
-    border-bottom: 2px solid #666666;
+    border-bottom: 2px solid #003366;
 }
 
 .nav > li {
     width:140px;
-    font-size: 18pt;
-    font-family: vijaya, helvetica, Arial, sans-serif;
+    color:#26196b;
+    font-size: 13pt;
+    font-family:  helvetica, Arial, sans-serif;
 }
+.nav > li > a{
+    color:#26196b;
+}
+
 .divTopHeader{
     background-color: #003366;
-    width: 100%;
     top:0px;
-    height:40px;
+}
+.paddingHeader{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .spanTopLeft{
     color:#f7f7f7;
@@ -178,9 +161,13 @@ margin-right: 0px;
 .fundobranco{
     background-color: #ffffff;
 }
+
+.fundoazulcinza{
+    background-color: #e6eeff;
+}
 .labelSobreTitulo{
     font-family:  vijaya,helvetica, Arial, sans-serif;
-    color: #666666;
+    color: #230d99;
     margin-n-top: 14px;
     font-size: 48pt;
 }
@@ -202,7 +189,7 @@ margin-right: 0px;
 
 .labelAssociadoTitulo{
     font-family:  vijaya,helvetica, Arial, sans-serif;
-    color: #333333;
+    color: #140d3a;
     margin-top: 14px;
     font-size: 25pt;
 }
@@ -215,15 +202,15 @@ margin-right: 0px;
 
 .carousel-indicators li
 {
-    border: 1px solid #666666;
+    border: 1px solid #003366;
 }
 .carousel-indicators .active
 {
-   background-color:  #666666;
+   background-color:  #003366;
 }
 
 .divFooter{
-    background-color: #3c3c3c;
+    background-color: #140d3a;
     width: 100%;
     bottom:0px;
     min-height:60px;
