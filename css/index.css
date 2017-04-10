@@ -12,14 +12,15 @@
     padding-bottom: 40px;
 }
 body {
-    background-image: url("../content/banner.jpg");
+   /* background-image: url("../content/banner.jpg"); 
     min-height: 450px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
-    max-width: 100%;
+    max-width: 100%;*/
+     background-color: #ffffff;
 }
 .affix {
     top:0;
@@ -101,13 +102,13 @@ body {
 .sectionFormTitulo{
     font-family: vijaya, helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #ffffff;
+    color: #274670;
     padding: 20px;
     font-size: 30pt;
 }
 .labelForm{
     font-family:  helvetica, Arial, sans-serif;
-    color: #ffffff;
+    color: #274670;
 }
 
 .associado1 {
@@ -135,7 +136,7 @@ body {
 .tituloservicos{
     font-family: vijaya, helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #f9f9f9;
+    color: #696c70;
     padding: 20px;
     border: 5px;
     font-size: 28pt;
@@ -143,11 +144,14 @@ body {
 .labelservicos{
     font-family:  vijaya,helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #ffffff;
+    color: #274670;
     margin-left: 50px;
     margin-top: 14px;
     font-size: 18pt;
 
+}
+.listservicos li{
+    color: #274670;
 }
 .shadow {
     box-shadow: 0px 10px 15px #888888;
@@ -164,6 +168,9 @@ margin-right: 0px;
 
 .fundoazulcinza{
     background-color: #e6eeff;
+}
+.fundoazul{
+      background-color: #003366;
 }
 .labelSobreTitulo{
     font-family:  vijaya,helvetica, Arial, sans-serif;
@@ -189,17 +196,22 @@ margin-right: 0px;
 
 .labelAssociadoTitulo{
     font-family:  vijaya,helvetica, Arial, sans-serif;
-    color: #140d3a;
+    color: #ffffff;
     margin-top: 14px;
     font-size: 25pt;
 }
 .textoAssociado{
     font-family:  helvetica, Arial, sans-serif;
-    color: #666666;
+    color: #cccccc;
     font-style: italic;
     font-size: 15pt;
 }
-
+.titulosectionassociados{
+    font-family:  vijaya,helvetica, Arial, sans-serif;
+    color: #ffffff;
+    margin-n-top: 14px;
+    font-size: 48pt;
+}
 .carousel-indicators li
 {
     border: 1px solid #003366;
@@ -209,8 +221,17 @@ margin-right: 0px;
    background-color:  #003366;
 }
 
+#CarouselAssociados > .carousel-indicators li
+{
+    border: 1px solid #ffffff;
+}
+#CarouselAssociados > .carousel-indicators .active
+{
+   background-color:  #ffffff;
+}
+
 .divFooter{
-    background-color: #140d3a;
+     background-color: #003366;
     width: 100%;
     bottom:0px;
     min-height:60px;
@@ -243,118 +264,25 @@ margin-right: 0px;
 }
 
 /* Panels customizados */
-.panel-1 {
-    border-color: #ff8566;
-}
-.panel-1 > .panel-heading {
-    color: #fff;
-    background-color: #ff5c33;
-    border-color: #ff8566;
-}
-.panel-1 > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #ff5c33;
-}
-.panel-1 > .panel-heading .badge {
-    color: #ff8566;
-    background-color: #fff;
-}
-.panel-1 > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #ff5c33;
-}
-.panel-2 {
-    border-color: #00cc00;
-}
-.panel-2 > .panel-heading {
-    color: #fff;
-    background-color: #009900;
-    border-color: #00cc00;
-}
-.panel-2 > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #00cc00;
-}
-.panel-2 > .panel-heading .badge {
-    color: #ff8566;
-    background-color: #fff;
-}
-.panel-2 > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #00cc00;
-}
 
 .panel-3 {
-    border-color: #094684;
+    border-color: #696c70;
 }
 .panel-3 > .panel-heading {
     color: #fff;
-    background-color: #033568;
-    border-color: #094684;
+    background-color: #9fa3a8;
+    border-color: #696c70;
 }
 .panel-3 > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #094684;
+    border-top-color: #696c70;
 }
 .panel-3 > .panel-heading .badge {
-    color: #094684;
+    color: #696c70;
     background-color: #fff;
 }
 .panel-3 > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #094684;
+    border-bottom-color: #696c70;
 }
 
 
-.panel-4 {
-    border-color: #c91456;
-}
-.panel-4 > .panel-heading {
-    color: #fff;
-    background-color: #ad0c47;
-    border-color: #c91456;
-}
-.panel-4 > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #c91456;
-}
-.panel-4 > .panel-heading .badge {
-    color: #c91456;
-    background-color: #fff;
-}
-.panel-4 > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #c91456;
-}
-
-.panel-5 {
-    border-color: #09a8c4;
-}
-.panel-5 > .panel-heading {
-    color: #fff;
-    background-color: #0193ad;
-    border-color: #09a8c4;
-}
-.panel-5 > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #09a8c4;
-}
-.panel-5 > .panel-heading .badge {
-    color: #09a8c4;
-    background-color: #fff;
-}
-.panel-5 > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #09a8c4;
-}
-
-
-.panel-6 {
-    border-color: #b5af05;
-}
-.panel-6 > .panel-heading {
-    color: #fff;
-    background-color: #9b9603;
-    border-color: #b5af05;
-}
-.panel-6 > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #b5af05;
-}
-.panel-6 > .panel-heading .badge {
-    color: #b5af05;
-    background-color: #fff;
-}
-.panel-6 > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #b5af05;
-}
 /***************************/
