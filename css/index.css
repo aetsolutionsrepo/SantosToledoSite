@@ -12,14 +12,6 @@
     padding-bottom: 40px;
 }
 body {
-   /* background-image: url("../content/banner.jpg"); 
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    max-width: 100%;*/
      background-color: #ffffff;
 }
 .affix {
@@ -136,15 +128,14 @@ body {
 .tituloservicos{
     font-family: vijaya, helvetica, Arial, sans-serif;
     font-weight: bold;
-    color: #696c70;
+    color: #274670;
     padding: 20px;
     border: 5px;
     font-size: 28pt;
 }
 .labelservicos{
     font-family:  vijaya,helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color: #274670;
+    color: #ffffff;
     margin-left: 50px;
     margin-top: 14px;
     font-size: 18pt;
@@ -154,7 +145,7 @@ body {
     color: #274670;
 }
 .shadow {
-    box-shadow: 0px 10px 15px #888888;
+    box-shadow: 0px 5px 10px #ffffff;
 }
 .row{
 margin-right: 0px;
@@ -214,11 +205,11 @@ margin-right: 0px;
 }
 .carousel-indicators li
 {
-    border: 1px solid #003366;
+    border: 1px solid #ffffff;
 }
 .carousel-indicators .active
 {
-   background-color:  #003366;
+   background-color:  #ffffff;
 }
 
 #CarouselAssociados > .carousel-indicators li
@@ -270,7 +261,7 @@ margin-right: 0px;
 }
 .panel-3 > .panel-heading {
     color: #fff;
-    background-color: #9fa3a8;
+    background-color: #003366;
     border-color: #696c70;
 }
 .panel-3 > .panel-heading + .panel-collapse > .panel-body {
