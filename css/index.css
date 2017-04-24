@@ -91,6 +91,12 @@ body {
     position: relative;
     padding: 20px;
 }
+.btnmore{
+    cursor: pointer;    
+     width: 36px ;
+    float: right;
+    margin-top: 4px;
+}
 .sectionFormTitulo{
     font-family: vijaya, helvetica, Arial, sans-serif;
     font-weight: bold;
