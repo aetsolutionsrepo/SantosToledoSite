@@ -284,3 +284,13 @@ margin-right: 0px;
 
 
 /***************************/
+
+.pclass{
+    margin-top: 10px;
+    color: #2b2b2b;
+}
+
+.dialogcustom{
+    left: 50px;
+    right: 50px;
+}
