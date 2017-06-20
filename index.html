@@ -77,12 +77,17 @@
             <li data-target="#myCarousel" data-slide-to="3"></li>
             <li data-target="#myCarousel" data-slide-to="4"></li>
             <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img class="img-responsive" style="width:100%;max-height: 430px;" src="content/bannerdireitofamilia.jpg" alt="Previdência - Garanta uma aponsentadoria tranquila." />
+            </div>
+
+            <div class="item">
+                <img class="img-responsive" style="width:100%;max-height: 430px;" src="content/bannersaude.jpg" alt="Direito da saúde - Saiba tudo sobre seus direitos" />
             </div>
 
             <div class="item">
@@ -175,15 +180,34 @@
                             </ul>
                             </p>
                             <div class="text-right">
-                                <img src="content/more.svg" class="btnmore" onclick="$('#direitocivil').dialog({title:'Direito Civil',width:550});" title="Mais atuações..." >
+                                <img src="content/more.svg" class="btnmore" onclick="$('#direitocivil').dialog({title:'Direito Civil',width:'auto',dialogClass:'dialogcustom'});" title="Mais atuações..." >
                             </div>
                         </div>
                         <div id="direitocivil" style="display: none;">
                             <ul class="listservicos">
-                                <li>Indenizações.</li>
-                                <li>Responsabilidade Civil.</li>
-                                <li>Acompanhamento de contratos civis.</li>
-                                <li>Ajuizamento e defesa em ações de cobranças.</li>
+                                <li>Indenizações.
+                                    <br>
+                                    <p class="pclass">
+                                        Indenizações: São reparações em pecúnia advindas de condenações por danos materiais e ou morais.
+                                    </p>
+                                </li>
+                                <li>Responsabilidade Civil.
+                                    <br>
+                                    <p class="pclass">
+                                        Responsabilidade civil é o dever de reparar os danos provocados numa situação onde determinada pessoa sofre prejuízos devido a atos ilícitos praticados contra sua personalidade.
+                                    </p>
+                                </li>
+                                <li>Acompanhamento de contratos civis.
+                                    <br>
+                                    <p class="pclass">
+                                        Acompanhamentos de contratos, Estudos, elaborações, e pareceres em contratos no âmbito mercantil, ou civil.
+                                    </p>
+                                </li>
+                                <li>Ajuizamento e defesa em ações:
+                                    <br>
+                                    <p class="pclass">
+                                       Ações Ordinárias e juizados civis.
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -243,29 +267,41 @@
                 <div class="col-sm-4">
                     <div class="panel panel-3 panelservicos">
                         <div class="panel-heading">
-                            <img src="content/consumidor.svg" class="imgservicosw" >
-                            <h4 class="labelservicos">Direito Consumidor</h4>
+                            <img src="content/saude.svg" class="imgservicosw" >
+                            <h4 class="labelservicos">Direito da Saúde</h4>
                         </div>
                         <div class="panel-body">
                             <p class="text-justify" style="font-size: medium;">
                             <ul class="listservicos">
-                                <li>Direito do Consumidor.</li>
-                                <li>Limpeza SPC/SERASA E BOA VISTA</li>
-                                <li>Danos Morais.</li>
-                                <li>Empresas Aéreas – Abusos.</li>
+                                <li>Negativas abusivas de cirurgias e tratamentos.</li>
+                                <li>Prazo abusivo de carência</li>
+                                <li>Reajustes abusivos na mensalidade.</li>
                             </ul>
                             </p>
                             <div class="text-right">
-                                <img src="content/more.svg" class="btnmore" onclick="$('#direitoconsumidor').dialog({title:'Direito Consumidor',width:550});" title="Mais atuações..." >
+                                <img src="content/more.svg" class="btnmore" onclick="$('#direitoconsumidor').dialog({title:'Direito da Saúde',width:'auto',dialogClass:'dialogcustom'});" title="Mais atuações..." >
                             </div>
                         </div>
                         <div id="direitoconsumidor" style="display: none;">
                             <ul class="listservicos">
-                                <li>Direito do Consumidor.</li>
-                                <li>Limpeza SPC/SERASA E BOA VISTA</li>
-                                <li>Danos Morais.</li>
-                                <li>Empresas Aéreas – Abusos.</li>
-                                <li>Turismo e Hotéis.</li>
+                                <li>Negativas abusivas de cirurgias e tratamentos.
+                                <br>
+                                    <p class="pclass">
+                                        Todos os procedimentos cirúrgicos e tratamentos que a operadora de plano de saúde é obrigada a custear estão previstos no rol da ANS, mais precisamente no anexo I da RESOLUÇÃO NORMATIVA nº 387/2015. Qualquer negativa dos procedimentos que constam neste rol é abusiva.
+                                    </p>
+                                </li>
+                                <li>Prazo abusivo de carência.
+                                <br>
+                                    <p class="pclass">
+                                        O período de carência é o tempo em que o usuário deve esperar  para ser atendido pelo plano de saúde em um determinado procedimento. Os prazos de carência devem estar informados no contrato, e obedecer o disposto no artigo 12, inciso V, da Lei 9656/98, cabe observar que para procedimentos de urgência, o prazo de carência é de 24 horas.
+                                    </p>
+                                </li>
+                                <li>Reajustes abusivos na mensalidade.
+                                    <br>
+                                    <p class="pclass">
+                                        O reajuste é o aumento na mensalidade do plano de saúde em função de mudança de faixa etária, ou quando caracterizada onerosidade excessiva no contrato. Entretanto este reajuste deve obedecer aos limites impostos pela ANS na RESOLUÇÂO NORMATIVA 63/2003 e 309/2012, sendo que o exceder a isso, torna-se abusividade.
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -393,26 +429,46 @@
                             </ul>
                             </p>
                          <div class="text-right">
-                                  <img src="content/more.svg" class="btnmore" onclick="$('#direitocriminal').dialog({title:'Direito Criminal',width:550});" title="Mais atuações..." >
+                                  <img src="content/more.svg" class="btnmore" onclick="$('#direitocriminal').dialog({title:'Direito Criminal',width:'auto',dialogClass:'dialogcustom'});" title="Mais atuações..." >
                             </div>
                         </div>
                         <div id="direitocriminal" style="display: none;">
                             <ul class="listservicos">
-                                <li>Introdução</li>
-                                <li>Plantão Criminal</li>
-                                <li>Direito Penal Econômico</li>
-                                <li>Crimes contra a ordem econômica</li>
-                                <li>Crime de Lavagem de Dinheiro</li>
-                                <li>Crimes Societários e Falimentares</li>
-                                <li>Crimes contra a Administração do Trabalho</li>
-                                <li>Crimes Previdenciários e Tributários</li>
-                                <li>Licitações</li>
+                                <!--<li>Introdução</li> -->
+                                <li>Plantão Criminal.
+                                    <br>
+                                    <p class="pclass">
+                                        Atendimento 24hs, diligências, e as primeiras providências de defesa, Habeas corpus, relaxamento de prisão, revogação da preventiva, revogação prisão temporária, liberdade condicional, defesa prévia etc.
+                                    </p>
+                                </li>
+                                <!--<li>Direito Penal Econômico</li> -->
+                                <li>Crimes contra a ordem econômica.
+                                <br>
+                                    <p class="pclass">
+                                        Os crimes previstos nas Leis 8.137/90 e 1.521/51, pode-se citar as seguintes condutas: abusar do poder econômico, dominando o mercado ou eliminando parcial ou totalmente a concorrência, formação de cartel.
+                                    </p>
+                                </li>
+                                <!--<li>Crime de Lavagem de Dinheiro</li> -->
+                                <li>Crimes Societários e Falimentares.
+                                    <br>
+                                    <p class="pclass">
+                                        Os crimes falimentares podem ser praticados tanto pelo devedor, quanto por terceiros, antes ou depois da sentença que decretar a falência.
+                                    </p>
+                                </li>
+                               <!-- <li>Crimes contra a Administração do Trabalho</li> -->
+                                <li>Crimes Previdenciários e Tributários.
+                                    <br>
+                                    <p class="pclass">
+                                        Apropriação indébita previdenciária, Falsificação de documento público, Inserção de dados falsos em sistema de informações,Modificação ou alteração não autorizada de sistema de informações,Estelionato.
+                                    </p>
+                                </li>
+                               <!-- <li>Licitações</li>
                                 <li>Crimes de Trânsito</li>
                                 <li>Eleitorais</li>
                                 <li>Crimes contra a Administração Pública</li>
                                 <li>Crimes virtuais</li>
                                 <li>Ambientais</li>
-                                <li>Direito Penal Geral</li>
+                                <li>Direito Penal Geral</li> -->
                             </ul>
                         </div>
                     </div>
@@ -494,15 +550,43 @@
                                 <li>Seguro de Automóveis</li>
                             </ul>
                             <div class="text-right">
-                                <img src="content/more.svg" class="btnmore" onclick="$('#dpvattransporte').dialog({title:'DPVAT - Transportes',width:550});" title="Mais atuações..." >
+                                <img src="content/more.svg" class="btnmore" onclick="$('#dpvattransporte').dialog({title:'DPVAT - Transportes',width:'auto',dialogClass:'dialogcustom'});" title="Mais atuações..." >
                             </div>
                         </div>
                         <div id="dpvattransporte" style="display: none;">
                             <ul class="listservicos">
-                                <li>Seguros DPVAT</li>
-                                <li>Acidentes de Trânsito</li>
-                                <li>Trânsito e Transporte</li>
-                                <li>Seguro de Automóveis</li>
+                                <li>Seguros DPVAT.
+                                <br>
+                                    <p class="pclass">
+                                        O Seguro de Danos Pessoais Causados por Veículos Automotores de Via Terrestre, sendo que a indenização varia de acordo com o grau de lesão, podendo ser leve, média, ou grave.
+                                    </p>
+                                </li>
+                                <li>Acidentes de Trânsito.
+                                    <br>
+                                    <p class="pclass">
+                                        É conceituado como todo acontecimento desastroso, casual ou não, tendo como conseqüências danos físicos ou materiais, envolvendo veículos, pessoas e ou animais nas vias públicas.
+                                    </p>
+                                </li>
+                                <li>Trânsito e Transporte.
+                                    <br>
+                                    <p class="pclass">
+                                        O trânsito é o volume de circulação dos diversos tipos de veículos nas diferentes vias de circulação.
+                                        Transporte é o movimento de mercadorias entre locais. O campo de transporte apresenta diversas características a nível de infraestrutura, veículos e operações comerciais.
+                                    </p>
+                                </li>
+                                <li>Seguro de Automóveis.
+                                    <br>
+                                    <p class="pclass">
+                                        O seguro facultativo de automóveis garante indenização por:
+                                        <ul>
+                                            <li  style="color: #2b2b2b;">Danos acidentais causados ao veículo, ou por roubo ou furto do mesmo (ou suas partes);</li>
+                                            <li  style="color: #2b2b2b;">Ressarcimento de danos (materiais ou pessoais) causados pelo veículo a terceiros;</li>
+                                            <li  style="color: #2b2b2b;">Indenização aos passageiros acidentados do veículo (ou seus beneficiários) e;</li>
+                                            <li  style="color: #2b2b2b;">Assistência ao veículo e seus ocupantes, em caso de acidente ou pane.</li>
+                                            <li  style="color: #2b2b2b;">A contratação do seguro é feita por meio de uma proposta. Esta, por sua vez, gera uma apólice, que é o contrato entre o segurado e a seguradora. </li>
+                                        </ul>
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
